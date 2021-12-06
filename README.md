@@ -1,2 +1,2 @@
-# Phase-1-Project
-<!-- This will be a Weather app  -->
+# Project-1-Final
+# Project-1-Final

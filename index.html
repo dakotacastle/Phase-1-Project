@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Weather App</title>
 </head>
 <body>
-  <div class="card">
-    <div class="search">
-      <input type="text" class="search-bar">
-      <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.6em" 
-        width="1.5em" xmlns="http://www.w3.org/2000/svg">
-        <path 
-          d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
-        </path>
-      </svg></button>  
+    <div class="card">
+        <div>
+          <button class="toggle"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M8,9c-1.628,0-3,1.372-3,3s1.372,3,3,3s3-1.372,3-3S9.628,9,8,9z"></path><path d="M16,6H8c-3.3,0-5.989,2.689-6,6v0.016C2.009,15.316,4.699,18,8,18h8c3.303,0,5.995-2.688,6-5.994c0-0.002,0-0.004,0-0.006 C21.991,8.691,19.301,6,16,6z M16,16H8c-2.202,0-3.996-1.792-4-3.99C4.004,9.799,5.798,8,8,8h8c2.202,0,3.996,1.799,4,4.006 C19.996,14.208,18.202,16,16,16z M20,12.016l0.443-0.004L21,12.016H20z"></path></svg></button>
+        </div>
+        <div class="search">
+            <input type="search-bar" class= "search-bar" placeholder="Search">
+            <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></button>
+        </div>
+        <div class="weather">
+            <h2 class="city">weather in SC</h2>
+                <h1 class="temp">51°F </h1>
+                <img src="" alt="" class= 'icon'>
+                <div class="description">Cloudy</div>
+                <div class="humidity">Humidity: </div>
+                <div class="wind">Wind speed: </div>
+            
+        </div>
     </div>
-    <div class="weather">
-      <h2 class="city">Weather in St. Johnsuby</h2>
-      <div class="temp">45°F</div>
-      <img src="" alt="" class="icon" />
-      <div class="description">Cloudy</div>
-      <div class="humidity">Humidity: 93%</div>
-      <div class="wind">Wind speed: 6 mph</div>
-    </div>
-  </div>
+    <script src="app.js"></script>
 </body>
-
 </html>
